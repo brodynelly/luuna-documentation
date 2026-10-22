@@ -21,15 +21,17 @@ The [release evidence report](/docs/docs-release-evidence) is the release gate. 
 
 Continue with the [complete walkthrough](/docs/docs-mvp-walkthrough), [current architecture](/docs/docs-current-architecture), or [capability reference](/docs/reference-capabilities).
 
-## The three supporting tools
+## The Luuna components
 
 | Component | Responsibility | Boundary |
 | --- | --- | --- |
+| Luuna runtime | Repository workflows, approval, implementation, validation, review, publication | The local Rust runtime owns policy and execution evidence |
 | Missions | Tickets, dependencies, intent, acceptance criteria | Seeds-derived CLI; explicit activation makes it the ticket authority |
 | Atlas | Scoped knowledge with provenance | Mulch-derived CLI; memory enters a plan only through explicit selection |
 | Beacon | Versioned prompt resources | Canopy-derived CLI; exact content, version, and hash are bound into approval |
+| Luuna AI | Native desktop interface for Pi | Tauri v2 client that starts Pi in RPC mode; separate from the runtime and docs assistant |
 
-They are independent public repositories consumed at pinned commits. Their npm package names do not imply published registry releases. Read the [component workflows](/docs/docs-component-workflows) and each component's reference.
+The four supporting components have independent repositories and release histories. Atlas, Missions, and Beacon are CLI tools; Luuna AI is a desktop client. Their package names do not imply published registry releases. Start with the [component overview](/docs/guide-components), then read the [Atlas guide](/docs/guide-component-atlas), [Missions guide](/docs/guide-component-missions), [Beacon guide](/docs/guide-component-beacon), or [Luuna AI guide](/docs/guide-component-ai). The source reference pages record the exact commit for each component.
 
 ## What this site documents
 
