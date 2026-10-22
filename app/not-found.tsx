@@ -1,0 +1,1 @@
+export default function NotFound(){return <main className="not-found"><span className="eyebrow">404 · LUUNA DOCS</span><h1>This page drifted out of orbit.</h1><p>The document may have moved. Start from the documentation index.</p><a className="primary" href="/">Back to documentation →</a></main>;}

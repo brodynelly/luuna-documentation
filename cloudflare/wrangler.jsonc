@@ -1,0 +1,13 @@
+{
+  "name": "luuna-docs",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-05-15",
+  "assets": {
+    "directory": "../static-export",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"],
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "vars": {"DOCS_AI_ENABLED": "false", "TURNSTILE_SITE_KEY": ""}
+}
